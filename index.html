@@ -27,7 +27,17 @@
 .cta-final h2{font-size:clamp(34px,4vw,52px);line-height:1.05;margin:0 0 18px}
 .cta-final p{max-width:720px;margin:0 auto 34px;color:#c3cad5;font-size:18px}
 .btn-aceite{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#111;padding:18px 34px;border-radius:999px;font-weight:900;box-shadow:0 18px 44px rgba(212,175,55,.22)}
-@media(max-width:900px){.hero,.plans,.how,.grid3,.calc,.footgrid{grid-template-columns:1fr}.brand{font-size:20px;letter-spacing:4px}.nav a.btn{display:none}.top{padding-bottom:48px}.plus{grid-template-columns:1fr}.divider{height:1px;width:100%}.hero-card .big,.price b,.percent,.result .value{font-size:44px}}
+
+    .journey{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:20px;align-items:center;margin-top:40px}
+    .journey-step{background:#fff;border-radius:28px;padding:35px;border:1px solid rgba(13,19,32,.08);box-shadow:0 15px 40px rgba(13,19,32,.06);text-align:center;height:100%}
+    .featured-step{border:3px solid var(--gold);background:linear-gradient(180deg,#fff,#fcf8ee);box-shadow:0 25px 70px rgba(212,175,55,.25);transform:scale(1.06)}
+    .step-number{width:50px;height:50px;border-radius:50%;background:var(--gold);color:white;display:flex;align-items:center;justify-content:center;font-weight:800;margin:0 auto 20px}
+    .journey-step h3{margin:0;font-size:28px;color:var(--black)}
+    .step-subtitle{color:var(--gray);margin:12px 0 25px}
+    .step-highlight{background:linear-gradient(135deg,rgba(212,175,55,.12),rgba(212,175,55,.20));border-radius:18px;padding:18px;font-size:28px;font-weight:800;color:var(--black);margin-bottom:20px}
+    .journey-arrow{width:80px;height:4px;background:var(--gold);border-radius:20px;position:relative}
+    .journey-arrow:after{content:"";position:absolute;right:-2px;top:-6px;border-left:14px solid var(--gold);border-top:8px solid transparent;border-bottom:8px solid transparent}
+@media(max-width:900px){.hero,.plans,.how,.grid3,.calc,.footgrid,.journey{grid-template-columns:1fr}.brand{font-size:20px;letter-spacing:4px}.nav a.btn{display:none}.top{padding-bottom:48px}.plus{grid-template-columns:1fr}.divider{height:1px;width:100%}.hero-card .big,.price b,.percent,.result .value{font-size:44px}.journey-arrow{transform:rotate(90deg);margin:10px auto;text-align:center}.featured-step{transform:none}}
   </style>
 </head>
 <body>
@@ -106,15 +116,62 @@
   </section>
 
   <section class="band">
-    <div class="wrap how">
-      <div class="iconcircle">↗</div>
-      <div class="box">
+    <div class="wrap">
+
+      <div class="center">
         <h2 class="section-title">Como funciona</h2>
-        <p>Enquanto a operação estiver em fase de construção e validação, o investimento permanece em <b>R$ 2.023,00 mensais</b>.</p>
-        <p>Quando a empresa ultrapassar <b>R$ 35.000,00 em faturamento mensal de vendas</b>, entendemos que o posicionamento, a oferta e a estrutura comercial já estão produzindo resultados consistentes. A partir desse ponto, participamos de uma pequena parcela do crescimento gerado pelo negócio, reforçando nosso compromisso com a evolução sustentável da operação.</p>
+        <p class="lead">
+          Um modelo simples que reduz o investimento inicial e alinha nossa remuneração ao crescimento da operação.
+        </p>
       </div>
+
+      <div class="journey">
+
+        <div class="journey-step">
+          <div class="step-number">1</div>
+          <h3>Construção</h3>
+          <p class="step-subtitle">Operação em estruturação e validação.</p>
+
+          <div class="step-highlight">R$ 2.023/mês</div>
+
+          <p>
+            Enquanto a empresa estiver em fase de construção, organização comercial e validação da oferta.
+          </p>
+        </div>
+
+        <div class="journey-arrow"></div>
+
+        <div class="journey-step featured-step">
+          <div class="step-number">2</div>
+          <h3>Tração</h3>
+          <p class="step-subtitle">Acima de R$ 35.000/mês em vendas.</p>
+
+          <div class="step-highlight">R$ 2.023 + 4%</div>
+
+          <p>
+            Quando a estrutura comercial começa a produzir resultados consistentes, participamos de uma pequena parcela do crescimento gerado pelo negócio.
+          </p>
+        </div>
+
+        <div class="journey-arrow"></div>
+
+        <div class="journey-step">
+          <div class="step-number">3</div>
+          <h3>Escala</h3>
+          <p class="step-subtitle">Operação consolidada.</p>
+
+          <div class="step-highlight">Revisão Estratégica</div>
+
+          <p>
+            Após atingir maturidade operacional, revisamos o modelo para a nova fase da empresa.
+          </p>
+        </div>
+
+      </div>
+
     </div>
   </section>
+
 
   <section id="simulador">
     <div class="wrap calc">
@@ -174,9 +231,9 @@
 
   <section class="cta-final">
     <div class="wrap">
-      <h2>Pronto para iniciar a próxima fase do negócio?</h2>
-      <p>Vamos transformar estratégia em execução, crescimento em previsibilidade e operação em empresa.</p>
-      <a class="btn-aceite" target="_blank" href="https://wa.me/5579999495525?text=Fernando%2C%20analisei%20a%20proposta%20e%20gostaria%20de%20iniciar%20o%20projeto.">Quero iniciar o projeto</a>
+      <h2>Sua próxima fase de crescimento começa agora.</h2>
+      <p>Chegou o momento de transformar conhecimento em estrutura, estrutura em previsibilidade e previsibilidade em crescimento sustentável.</p>
+      <a class="btn-aceite" target="_blank" href="https://wa.me/557999495525?text=Fernando%2C%20analisei%20a%20proposta%20e%20gostaria%20de%20iniciar%20o%20projeto.">Quero iniciar o projeto</a>
     </div>
   </section>
 
